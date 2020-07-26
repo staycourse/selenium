@@ -3,6 +3,7 @@ import time
 #可以一次打开所有窗口，后续可以按具体需求修改
 driver=webdriver.Chrome(r'D:\chromedriver_win32\chromedriver.exe')
 driver.get('https://bimface.com/')#获取官网地址
+driver.maximize_window()
 time.sleep(3)
 driver.find_element_by_link_text("成功案例").click()
 time.sleep(3)

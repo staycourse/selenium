@@ -2,11 +2,22 @@ from selenium import webdriver
 import time
 
 driver=webdriver.Chrome(r'D:\chromedriver_win32\chromedriver.exe')
-driver.implicitly_wait(10)
+driver.implicitly_wait(2)
 driver.get('https://bimface.com/')
-driver.find_element_by_link_text('关于我们').click()
+driver.maximize_window()
+driver.find_element_by_link_text('文档').click()
+curhandle=driver.current_window_handle
+ele=driver.find_element_by_xpath('//div[@class="subNav"]')
+li=ele.find_elements_by_xpath('a')
+for i in li:
+    driver.implicitly_wait(2)
+    i.click()
+    allhanle=driver.window_handles
+    for j in allhanle:
+        if j==curhandle:
+            driver.switch_to.window(j)
 
-time.sleep(3)
+
 '''
 #定位界面元素，找id
 ele=driver.find_element_by_id('kwdselectid')

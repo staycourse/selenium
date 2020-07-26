@@ -5,9 +5,14 @@ driver=webdriver.Chrome(r'D:\chromedriver_win32\chromedriver.exe')
 driver.get('https://bimface.com/')#获取官网地址
 time.sleep(3)
 driver.find_element_by_link_text("示例文件").click()
+globalwindow=driver.current_window_handle
 time.sleep(2)
 eles=driver.find_elements_by_xpath('//div[@class="bref"]')
-print(len(eles))
+eles[0].click()
+curwindow=driver.current_window_handle
+driver.implicitly_wait(5)
+time.sleep(15)
+driver.switch_to.window(globalwindow)
 driver.find_element_by_xpath('//div[@class="btn-primary-lg"][text()="上传模型/图纸"]').click()
 time.sleep(2)
 driver.find_element_by_xpath('//div[@class="btn-primary-lg"][text()="添加本地文件"]').click()

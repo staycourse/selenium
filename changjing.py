@@ -13,9 +13,11 @@ for i in allhandle:
     if i!=curhanle:
         newhanle=i
 driver.switch_to.window(newhanle)
+time.sleep(4)
 e=driver.find_elements_by_xpath('//ul[@class="detail"]')
-li=e[0].find_elements_by_xpath('li')
-print(len(li))
+li0=e[0].find_elements_by_xpath('li')
+li1=e[1].find_elements_by_xpath('li')
+print(len(li0),len(li1))
 #https://blog.csdn.net/weixin_30500105/article/details/97302533参考
 #driver.find_element_by_xpath('//div[@class="btn-box"]').click()
 

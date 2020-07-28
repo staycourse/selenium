@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.5.1 on win32)" rpa="false" generated="20200728 18:41:30.441">
+<suite source="D:\selenium" id="s1" name="Selenium">
+<suite source="D:\selenium\test.robot" id="s1-s1" name="Test">
+<test id="s1-s1-t1" name="简单测试">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/</arg>
+<arg>Chorme</arg>
+</arguments>
+<msg level="INFO" timestamp="20200728 18:41:30.655">Opening browser 'Chorme' to base url 'https://bimface.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg level="INFO" timestamp="20200728 18:41:30.655">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200728 18:41:30.655" endtime="20200728 18:41:30.656"></status>
+</kw>
+<msg level="FAIL" timestamp="20200728 18:41:30.657">ValueError: chorme is not a supported browser.</msg>
+<status status="FAIL" starttime="20200728 18:41:30.655" endtime="20200728 18:41:30.657"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="FAIL" starttime="20200728 18:41:30.653" critical="yes" endtime="20200728 18:41:30.657">ValueError: chorme is not a supported browser.</status>
+</test>
+<status status="FAIL" starttime="20200728 18:41:30.467" endtime="20200728 18:41:30.658"></status>
+</suite>
+<status status="FAIL" starttime="20200728 18:41:30.443" endtime="20200728 18:41:30.658"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">DEBUG</stat>
+</tag>
+<suite>
+<stat pass="0" id="s1" fail="1" name="Selenium">Selenium</stat>
+<stat pass="0" id="s1-s1" fail="1" name="Test">Selenium.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

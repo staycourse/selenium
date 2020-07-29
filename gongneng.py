@@ -11,6 +11,14 @@ time.sleep(3)
 #mulu=driver.find_elements_by_xpath('//span[@class="menutitle"]')
 #获取按钮集合
 clickbtn=driver.find_elements_by_xpath('//i[@class="el-submenu__icon-arrow el-icon-arrow-down"]')
+cur_url=driver.current_url
+print(cur_url)
+if cur_url=="https://bimface.com/intro":
+    print("跳转成功")
+else:
+    print("跳转失败")
+print(driver.title)
+'''
 clickbtn_len=len(clickbtn)
 mulu=driver.find_elements_by_xpath('//ul[@class="el-menu el-menu--inline"]')
 mulu_len=len(mulu)
@@ -24,5 +32,6 @@ for i in range(0,clickbtn_len):
         driver.implicitly_wait(2)
         j.click()
         time.sleep(2)
+'''
 
 

@@ -1,8 +1,22 @@
 *** Settings ***
-Library     Selenium2Library
+Library     SeleniumLibrary
 
 *** Test Cases ***
-简单测试
+case1
     [Tags]    DEBUG
-    open browser    https://bimface.com/    Chorme
+    Open Browser    https://bimface.com/    chrome
     maximize browser window
+    click element      //*[@id="__layout"]/div/div[1]/header/ul/li[2]/a
+    ${pre_handle}       Select Window
+    Select Window       ${pre_handle}
+    click element       //*[@id="__layout"]/div/div[1]/header/ul/li[3]/a
+    Select Window       NEW
+    Select Window       MAIN
+    ${all}              Get Window Handles
+    ${title}        Get Title
+    Title Should Be      ${title}    ${title}
+
+
+
+
+

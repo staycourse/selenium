@@ -1,87 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200729 18:21:36.632" generator="Robot 3.2.1 (Python 3.5.1 on win32)">
-<suite source="D:\selenium" id="s1" name="Selenium">
-<suite source="D:\selenium\test.robot" id="s1-s1" name="Test">
-<test id="s1-s1-t1" name="case1">
-<kw library="SeleniumLibrary" name="Open Browser">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
+<robot generator="Robot 3.2.1 (Python 3.5.1 on win32)" generated="20200730 17:13:23.547" rpa="false">
+<suite id="s1" source="D:\selenium" name="Selenium">
+<suite id="s1-s1" source="D:\selenium\first.robot" name="First">
+<test id="s1-s1-t1" name="首页按钮跳转">
+<kw name="Open Browser">
 <arguments>
-<arg>https://bimface.com/</arg>
+<arg>https://bimface.com</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200729 18:21:36.814" level="INFO">Opening browser 'chrome' to base url 'https://bimface.com/'.</msg>
-<status starttime="20200729 18:21:36.814" endtime="20200729 18:21:39.700" status="PASS"></status>
-</kw>
-<kw library="SeleniumLibrary" name="Maximize Browser Window">
-<doc>Maximizes current browser window.</doc>
-<status starttime="20200729 18:21:39.700" endtime="20200729 18:21:40.817" status="PASS"></status>
-</kw>
-<kw library="SeleniumLibrary" name="Click Element">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="__layout"]/div/div[1]/header/ul/li[2]/a</arg>
-</arguments>
-<msg timestamp="20200729 18:21:40.817" level="INFO">Clicking element '//*[@id="__layout"]/div/div[1]/header/ul/li[2]/a'.</msg>
-<status starttime="20200729 18:21:40.817" endtime="20200729 18:21:40.861" status="PASS"></status>
-</kw>
-<kw library="SeleniumLibrary" name="Select Window">
-<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
-<assign>
-<var>${pre_handle}</var>
-</assign>
-<msg timestamp="20200729 18:21:40.869" level="INFO">${pre_handle} = CDwindow-5AF0695A69C07CD3933E6F664B24AC85</msg>
-<status starttime="20200729 18:21:40.861" endtime="20200729 18:21:40.869" status="PASS"></status>
-</kw>
-<kw library="SeleniumLibrary" name="Select Window">
-<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
-<arguments>
-<arg>${pre_handle}</arg>
-</arguments>
-<status starttime="20200729 18:21:40.869" endtime="20200729 18:21:40.885" status="PASS"></status>
-</kw>
-<kw library="SeleniumLibrary" name="Click Element">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="__layout"]/div/div[1]/header/ul/li[3]/a</arg>
-</arguments>
-<msg timestamp="20200729 18:21:40.885" level="INFO">Clicking element '//*[@id="__layout"]/div/div[1]/header/ul/li[3]/a'.</msg>
-<status starttime="20200729 18:21:40.885" endtime="20200729 18:21:41.023" status="PASS"></status>
-</kw>
-<kw library="SeleniumLibrary" name="Select Window">
-<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
-<arguments>
-<arg>NEW</arg>
-</arguments>
-<kw library="SeleniumLibrary" name="Capture Page Screenshot">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200729 18:21:41.438" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status starttime="20200729 18:21:41.039" endtime="20200729 18:21:41.438" status="PASS"></status>
-</kw>
-<msg timestamp="20200729 18:21:41.449" level="FAIL">Window with last index is same as the current window.</msg>
-<status starttime="20200729 18:21:41.023" endtime="20200729 18:21:41.449" status="FAIL"></status>
+<msg level="FAIL" timestamp="20200730 17:13:23.699">No keyword with name 'Open Browser' found.</msg>
+<status starttime="20200730 17:13:23.699" status="FAIL" endtime="20200730 17:13:23.699"></status>
 </kw>
 <tags>
 <tag>DEBUG</tag>
 </tags>
-<status starttime="20200729 18:21:36.813" critical="yes" endtime="20200729 18:21:41.449" status="FAIL">Window with last index is same as the current window.</status>
+<status starttime="20200730 17:13:23.697" critical="yes" status="FAIL" endtime="20200730 17:13:23.700">No keyword with name 'Open Browser' found.</status>
 </test>
-<status starttime="20200729 18:21:36.658" endtime="20200729 18:21:41.450" status="FAIL"></status>
+<status starttime="20200730 17:13:23.574" status="FAIL" endtime="20200730 17:13:23.700"></status>
 </suite>
-<status starttime="20200729 18:21:36.634" endtime="20200729 18:21:41.451" status="FAIL"></status>
+<status starttime="20200730 17:13:23.549" status="FAIL" endtime="20200730 17:13:23.701"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">DEBUG</stat>
+<stat pass="0" fail="1">DEBUG</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" pass="0" name="Selenium">Selenium</stat>
-<stat fail="1" id="s1-s1" pass="0" name="Test">Selenium.Test</stat>
+<stat id="s1" name="Selenium" pass="0" fail="1">Selenium</stat>
+<stat id="s1-s1" name="First" pass="0" fail="1">Selenium.First</stat>
 </suite>
 </statistics>
 <errors>
+<msg level="ERROR" timestamp="20200730 17:13:23.696">Error in file 'D:\selenium\first.robot' on line 2: Initializing test library 'SeleniumLibrary' with arguments [ a.txt ] failed: ValueError: Invalid time string 'a.txt'.
+Traceback (most recent call last):
+  File "d:\program files\lib\site-packages\SeleniumLibrary\__init__.py", line 432, in __init__
+    self.timeout = timestr_to_secs(timeout)
+  File "d:\program files\lib\site-packages\robot\utils\robottime.py", line 48, in timestr_to_secs
+    raise ValueError("Invalid time string '%s'." % timestr)</msg>
 </errors>
 </robot>

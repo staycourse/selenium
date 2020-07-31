@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200731 14:35:14.476" generator="Robot 3.2.1 (Python 3.5.1 on win32)">
+<suite name="Pagetest" source="C:\Users\liuwz-d\PycharmProjects\pagetest" id="s1">
+<suite name="Fifth" source="C:\Users\liuwz-d\PycharmProjects\pagetest\fifth.robot" id="s1-s1">
+<test name="图模联动" id="s1-s1-t1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:14.663">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:35:14.663" endtime="20200731 14:35:18.479"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/linkage</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:18.479">Opening url 'https://bimface.com/example/linkage'</msg>
+<status status="PASS" starttime="20200731 14:35:18.479" endtime="20200731 14:35:18.937"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/linkage</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:18.942">Current location is 'https://bimface.com/example/linkage'.</msg>
+<status status="PASS" starttime="20200731 14:35:18.937" endtime="20200731 14:35:18.942"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:35:18.942" endtime="20200731 14:35:19.146"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:35:19.146" endtime="20200731 14:35:21.544"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:35:14.662" endtime="20200731 14:35:21.544" critical="yes"></status>
+</test>
+<test name="数字化在线审图平台" id="s1-s1-t2">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:21.547">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:35:21.546" endtime="20200731 14:35:25.552"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/drawingInspection</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:25.552">Opening url 'https://bimface.com/example/drawingInspection'</msg>
+<status status="PASS" starttime="20200731 14:35:25.552" endtime="20200731 14:35:25.855"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/drawingInspection</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:25.862">Current location is 'https://bimface.com/example/drawingInspection'.</msg>
+<status status="PASS" starttime="20200731 14:35:25.855" endtime="20200731 14:35:25.862"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:35:25.862" endtime="20200731 14:35:26.043"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:35:26.043" endtime="20200731 14:35:28.114"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:35:21.545" endtime="20200731 14:35:28.114" critical="yes"></status>
+</test>
+<test name="能耗监控平台" id="s1-s1-t3">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:28.116">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:35:28.115" endtime="20200731 14:35:31.281"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/energy</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:31.282">Opening url 'https://bimface.com/example/energy'</msg>
+<status status="PASS" starttime="20200731 14:35:31.281" endtime="20200731 14:35:34.449"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/energy</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:34.475">Current location is 'https://bimface.com/example/energy'.</msg>
+<status status="PASS" starttime="20200731 14:35:34.449" endtime="20200731 14:35:34.475"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:35:34.476" endtime="20200731 14:35:34.769"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:35:34.769" endtime="20200731 14:35:36.852"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:35:28.114" endtime="20200731 14:35:36.853" critical="yes"></status>
+</test>
+<test name="BIM设计协同平台" id="s1-s1-t4">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:36.856">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:35:36.856" endtime="20200731 14:35:40.287"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/team</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:40.288">Opening url 'https://bimface.com/example/team'</msg>
+<status status="PASS" starttime="20200731 14:35:40.288" endtime="20200731 14:35:40.603"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/team</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:40.608">Current location is 'https://bimface.com/example/team'.</msg>
+<status status="PASS" starttime="20200731 14:35:40.603" endtime="20200731 14:35:40.608"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:35:40.608" endtime="20200731 14:35:40.798"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:35:40.798" endtime="20200731 14:35:42.866"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:35:36.854" endtime="20200731 14:35:42.867" critical="yes"></status>
+</test>
+<test name="图纸设计协同平台" id="s1-s1-t5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:42.872">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:35:42.871" endtime="20200731 14:35:46.446"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/splitDrawing</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:46.446">Opening url 'https://bimface.com/example/splitDrawing'</msg>
+<status status="PASS" starttime="20200731 14:35:46.446" endtime="20200731 14:35:46.642"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/splitDrawing</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:46.648">Current location is 'https://bimface.com/example/splitDrawing'.</msg>
+<status status="PASS" starttime="20200731 14:35:46.642" endtime="20200731 14:35:46.649"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:35:46.649" endtime="20200731 14:35:46.853"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:35:46.853" endtime="20200731 14:35:49.742"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:35:42.868" endtime="20200731 14:35:49.743" critical="yes"></status>
+</test>
+<test name="GIS模型展示平台" id="s1-s1-t6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:49.749">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:35:49.749" endtime="20200731 14:35:53.048"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/eg-gis/gis_1</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:53.048">Opening url 'https://bimface.com/eg-gis/gis_1'</msg>
+<status status="PASS" starttime="20200731 14:35:53.048" endtime="20200731 14:35:53.894"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/eg-gis/gis_1</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:53.899">Current location is 'https://bimface.com/eg-gis/gis_1'.</msg>
+<status status="PASS" starttime="20200731 14:35:53.895" endtime="20200731 14:35:53.899"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:35:53.899" endtime="20200731 14:35:54.095"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:35:54.095" endtime="20200731 14:35:56.200"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:35:49.744" endtime="20200731 14:35:56.201" critical="yes"></status>
+</test>
+<test name="BIMFACE4D模拟" id="s1-s1-t7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:56.207">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:35:56.206" endtime="20200731 14:35:59.522"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/progress</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:35:59.523">Opening url 'https://bimface.com/example/progress'</msg>
+<status status="PASS" starttime="20200731 14:35:59.523" endtime="20200731 14:36:01.293"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/progress</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:36:01.297">Current location is 'https://bimface.com/example/progress'.</msg>
+<status status="PASS" starttime="20200731 14:36:01.293" endtime="20200731 14:36:01.297"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:36:01.297" endtime="20200731 14:36:01.598"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:36:01.598" endtime="20200731 14:36:03.654"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:35:56.203" endtime="20200731 14:36:03.655" critical="yes"></status>
+</test>
+<test name="停车场室内定位" id="s1-s1-t8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/application</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:36:03.663">Opening browser 'chrome' to base url 'https://bimface.com/application'.</msg>
+<status status="PASS" starttime="20200731 14:36:03.662" endtime="20200731 14:36:08.319"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/park</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:36:08.320">Opening url 'https://bimface.com/example/park'</msg>
+<status status="PASS" starttime="20200731 14:36:08.320" endtime="20200731 14:36:08.765"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://bimface.com/example/park</arg>
+</arguments>
+<msg level="INFO" timestamp="20200731 14:36:08.771">Current location is 'https://bimface.com/example/park'.</msg>
+<status status="PASS" starttime="20200731 14:36:08.765" endtime="20200731 14:36:08.771"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20200731 14:36:08.771" endtime="20200731 14:36:08.961"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200731 14:36:08.961" endtime="20200731 14:36:11.031"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" starttime="20200731 14:36:03.657" endtime="20200731 14:36:11.032" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200731 14:35:14.500" endtime="20200731 14:36:11.037"></status>
+</suite>
+<status status="PASS" starttime="20200731 14:35:14.478" endtime="20200731 14:36:11.056"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0">Critical Tests</stat>
+<stat pass="8" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="8" fail="0">DEBUG</stat>
+</tag>
+<suite>
+<stat name="Pagetest" pass="8" id="s1" fail="0">Pagetest</stat>
+<stat name="Fifth" pass="8" id="s1-s1" fail="0">Pagetest.Fifth</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
